@@ -13,7 +13,9 @@ void pow () {    // входные значения   
     ASSERT_EQUAL(expected, actual);
 }    
 
-int main() {   // создаём тестовый набор    
+int main() {   // создаём тестовый набор  
+    suite s;
+    
     s.push_back(CUTE(testPow));    //создаем listener и runner    
     ide_listener<> listener;
     makeRunner(listener)(s, "Test pow");

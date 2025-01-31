@@ -1,5 +1,7 @@
+#ifndef _Uymina_LR2_part2_h_
+#define _Uymina_LR2_part2h_
+
 #include <cstring>
-#include <cmath>
 
 using namespace std;
 
@@ -9,7 +11,7 @@ bool UserInput(string input)
 
     try
     {
-        int number = stod(input);
+        int number = stoi(input);
     }
     catch(...)
     {
@@ -19,15 +21,14 @@ bool UserInput(string input)
     return true;
 }
 
-int pow(int a, int b)
-{
-    int pow = a * b;
-    return (int)cin;
+int pow(int NumberA, int NumberB) {
+
+    return NumberA * NumberB ;
 }
 
-int div(int a, int b)
-{
-    int div = a / b;
-    return (int)div;
+
+int div(int NumberA, int NumberB) {
+    return NumberA / NumberB;
 
 }
+#endif
